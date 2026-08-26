@@ -11,6 +11,8 @@
     content="Ebrahim Al-Shabebi — Full-Stack Web Developer. Building complete web applications from concept to deployment." />
   <title>Ebrahim Al-Shabebi — Full-Stack Web Developer</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
   <!-- Apple-like system typography; no font download required -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -29,11 +31,17 @@
       </a>
 
       <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a class="nav-cta" href="#contact"><span data-i18n="nav.talk">Let's talk</span> <span>↗</span></a>
+      </div>
+
+      <div class="language-switcher glass-control" aria-label="Language selector">
+        <button type="button" class="language-button active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="language-divider">/</span>
+        <button type="button" class="language-button" data-lang="ar" aria-pressed="false">العربية</button>
       </div>
 
       <button class="menu-toggle glass-control" id="menuToggle" aria-label="Open menu" aria-expanded="false">
@@ -52,17 +60,17 @@
         <div class="hero-copy reveal">
           <div class="eyebrow glass-pill">
             <span class="status-dot"></span>
-            Available for web projects
+            <span data-i18n="hero.available">Available for web projects</span>
           </div>
 
-          <p class="hero-kicker">FULL-STACK WEB DEVELOPER</p>
+          <p class="hero-kicker" data-i18n="hero.kicker">FULL-STACK WEB DEVELOPER</p>
 
           <h1>
-            Building the web<br />
-            <span class="text-gradient">from idea to reality.</span>
+            <span data-i18n="hero.title1">Building the web</span><br />
+            <span class="text-gradient" data-i18n="hero.title2">from idea to reality.</span>
           </h1>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="hero.description">
             I build complete web applications from concept to deployment —
             combining frontend, backend, databases, APIs, authentication,
             and administrative systems into practical products.
@@ -70,60 +78,62 @@
 
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">
-              <span>View my work</span>
+              <span data-i18n="hero.viewWork">View my work</span>
               <span class="button-icon">↗</span>
             </a>
             <a class="button button-glass" href="#contact">
-              Let's work together
+              <span data-i18n="hero.workTogether">Let's work together</span>
             </a>
             <a class="text-link" href="assets/Ebrahim_Al-Shabebi_CV.pdf" download>
-              Download CV <span>↓</span>
+              <span data-i18n="hero.downloadCV">Download CV</span> <span>↓</span>
             </a>
           </div>
 
           <div class="hero-meta">
-            <span>Istanbul, Türkiye</span>
+            <span data-i18n="hero.location">Istanbul, Türkiye</span>
             <span class="meta-line"></span>
-            <span>Computer Engineering · 2023—2027</span>
+            <span data-i18n="hero.educationMeta">Computer Engineering · 2023—2027</span>
           </div>
         </div>
 
         <div class="hero-visual reveal delay-2">
-          <div class="liquid-sphere" aria-hidden="true">
-            <div class="sphere-glow"></div>
-            <div class="sphere-core"></div>
-            <div class="sphere-highlight"></div>
+          <div class="hero-laptop" aria-label="Developer laptop animation">
+            <div class="laptop-screen-shell">
+              <div class="laptop-screen">
+                <div class="laptop-screen-glass"></div>
+                <div class="laptop-screen-content">
+                  <div class="typing-line">
+                    <span id="heroTypingText">I BUILD</span><span class="typing-cursor" aria-hidden="true"></span>
+                  </div>
+                </div>
+                <div class="laptop-screen-reflection"></div>
+              </div>
+              <div class="laptop-camera"></div>
+            </div>
+
+            <div class="laptop-base">
+              <div class="laptop-keyboard">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="laptop-trackpad"></div>
+              <div class="laptop-notch"></div>
+            </div>
+
+            <div class="laptop-shadow"></div>
           </div>
 
-          <div class="floating-glass-card card-code">
-            <div class="code-top">
-              <span class="window-dot"></span>
-              <span class="window-dot"></span>
-              <span class="window-dot"></span>
-            </div>
-            <pre><span class="code-purple">const</span> <span class="code-white">developer</span> = {
-  <span class="code-red">focus</span>: <span class="code-string">"full-stack"</span>,
-  <span class="code-red">build</span>: <span class="code-string">"real products"</span>,
-  <span class="code-red">ship</span>: <span class="code-string">true</span>
-};</pre>
-          </div>
-
-          <div class="floating-glass-card card-stack">
-            <span class="stack-label">CORE STACK</span>
-            <div class="stack-row">
-              <span class="mini-tech">JS</span>
-              <span class="mini-tech">REACT</span>
-              <span class="mini-tech">NODE</span>
-              <span class="mini-tech">SQL</span>
-            </div>
-          </div>
+          <div class="laptop-orbit laptop-orbit-one" aria-hidden="true"></div>
+          <div class="laptop-orbit laptop-orbit-two" aria-hidden="true"></div>
         </div>
       </div>
 
       <div class="hero-bottom container">
         <div class="hero-scroll">
           <span class="scroll-line"></span>
-          <span>Scroll to explore</span>
+          <span data-i18n="hero.scroll">Scroll to explore</span>
         </div>
         <div class="hero-signal">01 / 08</div>
       </div>
@@ -135,20 +145,21 @@
         <div class="section-heading reveal">
           <span class="section-number">01</span>
           <div>
-            <p class="section-label">ABOUT ME</p>
-            <h2>More than code.<br /><span class="muted">I build complete systems.</span></h2>
+            <p class="section-label" data-i18n="about.label">ABOUT ME</p>
+            <h2><span data-i18n="about.title1">More than code.</span><br /><span class="muted"
+                data-i18n="about.title2">I build complete systems.</span></h2>
           </div>
         </div>
 
         <div class="about-layout">
           <div class="glass-panel about-main reveal">
             <div class="panel-glow"></div>
-            <p class="large-copy">
+            <p class="large-copy" data-i18n="about.largeCopy">
               I'm <strong>Ebrahim Al-Shabebi</strong>, a Full-Stack Web Developer
               and Web Development Lead focused on turning ideas into reliable,
               usable web applications.
             </p>
-            <p class="body-copy">
+            <p class="body-copy" data-i18n="about.bodyCopy">
               My work covers the full path from interface design and frontend
               functionality to backend services, databases, APIs, authentication,
               administrative panels, deployment, and maintenance.
@@ -156,33 +167,33 @@
 
             <div class="about-signature">
               <span class="signature-line"></span>
-              <span>Frontend + Backend + Database</span>
+              <span data-i18n="about.signature">Frontend + Backend + Database</span>
             </div>
           </div>
 
           <div class="about-side">
             <div class="glass-panel stat-card reveal delay-1">
-              <span class="stat-value">5<span>+</span></span>
-              <span class="stat-label">client websites delivered</span>
+              <span class="stat-value">10<span>+</span></span>
+              <span class="stat-label" data-i18n="about.stat1">client websites delivered</span>
             </div>
             <div class="glass-panel stat-card reveal delay-2">
               <span class="stat-value">9</span>
-              <span class="stat-label">projects ready to showcase</span>
+              <span class="stat-label" data-i18n="about.stat2">projects ready to showcase</span>
             </div>
             <div class="glass-panel stat-card stat-card-red reveal delay-3">
-              <span class="stat-value">01</span>
-              <span class="stat-label">full-stack mindset from concept to deployment</span>
+              <span class="stat-value">1</span>
+              <span class="stat-label" data-i18n="about.stat3">full-stack mindset from concept to deployment</span>
             </div>
           </div>
         </div>
 
         <div class="about-tags reveal">
-          <span class="glass-tag">Web Development Lead</span>
-          <span class="glass-tag">Full-Stack Development</span>
-          <span class="glass-tag">Database-driven Apps</span>
-          <span class="glass-tag">REST APIs</span>
-          <span class="glass-tag">Authentication</span>
-          <span class="glass-tag">Admin Systems</span>
+          <span class="glass-tag" data-i18n="about.tag1">Web Development Lead</span>
+          <span class="glass-tag" data-i18n="about.tag2">Full-Stack Development</span>
+          <span class="glass-tag" data-i18n="about.tag3">Database-driven Apps</span>
+          <span class="glass-tag" data-i18n="about.tag4">REST APIs</span>
+          <span class="glass-tag" data-i18n="about.tag5">Authentication</span>
+          <span class="glass-tag" data-i18n="about.tag6">Admin Systems</span>
         </div>
       </div>
     </section>
@@ -193,21 +204,18 @@
         <div class="section-heading reveal">
           <span class="section-number">02</span>
           <div>
-            <p class="section-label">SKILLS / TECHNOLOGIES</p>
-            <h2>The tools behind<br /><span class="muted">the work.</span></h2>
+            <p class="section-label" data-i18n="skills.label">SKILLS / TECHNOLOGIES</p>
+            <h2><span data-i18n="skills.title1">The tools behind</span><br /><span class="muted"
+                data-i18n="skills.title2">the work.</span></h2>
           </div>
         </div>
 
         <div class="skills-layout">
           <div class="skills-intro reveal">
-            <p class="body-copy">
+            <p class="body-copy" data-i18n="skills.intro">
               A practical stack for building, connecting, deploying, and
               maintaining modern web applications.
             </p>
-            <div class="skills-note glass-panel">
-              <span class="note-icon">✦</span>
-              <span>Primary focus: web development</span>
-            </div>
           </div>
 
           <div class="skills-grid">
@@ -216,8 +224,8 @@
                 <span class="skill-index">01</span>
                 <span class="skill-icon">&lt;/&gt;</span>
               </div>
-              <h3>Frontend</h3>
-              <p>Interfaces that are responsive, clear, and built for real users.</p>
+              <h3 data-i18n="skills.frontend.title">Frontend</h3>
+              <p data-i18n="skills.frontend.desc">Interfaces that are responsive, clear, and built for real users.</p>
               <div class="tech-list">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span>
               </div>
@@ -228,8 +236,8 @@
                 <span class="skill-index">02</span>
                 <span class="skill-icon">{ }</span>
               </div>
-              <h3>Backend</h3>
-              <p>Application logic, APIs, authentication, CRUD, and admin systems.</p>
+              <h3 data-i18n="skills.backend.title">Backend</h3>
+              <p data-i18n="skills.backend.desc">Application logic, APIs, authentication, CRUD, and admin systems.</p>
               <div class="tech-list">
                 <span>Node.js</span><span>Express.js</span><span>REST
                   APIs</span><span>Authentication</span><span>CRUD</span>
@@ -241,8 +249,8 @@
                 <span class="skill-index">03</span>
                 <span class="skill-icon">DB</span>
               </div>
-              <h3>Databases</h3>
-              <p>Structured data, relationships, queries, and database-driven products.</p>
+              <h3 data-i18n="skills.db.title">Databases</h3>
+              <p data-i18n="skills.db.desc">Structured data, relationships, queries, and database-driven products.</p>
               <div class="tech-list">
                 <span>PostgreSQL</span><span>MySQL</span><span>SQL</span><span>Database Design</span>
               </div>
@@ -253,8 +261,8 @@
                 <span class="skill-index">04</span>
                 <span class="skill-icon">WP</span>
               </div>
-              <h3>CMS / Web</h3>
-              <p>Website customization and maintenance for content-driven projects.</p>
+              <h3 data-i18n="skills.cms.title">CMS / Web</h3>
+              <p data-i18n="skills.cms.desc">Website customization and maintenance for content-driven projects.</p>
               <div class="tech-list">
                 <span>WordPress</span><span>Blocksy</span>
               </div>
@@ -265,8 +273,9 @@
                 <span class="skill-index">05</span>
                 <span class="skill-icon">01</span>
               </div>
-              <h3>Programming</h3>
-              <p>Additional programming foundations for problem solving and systems.</p>
+              <h3 data-i18n="skills.programming.title">Programming</h3>
+              <p data-i18n="skills.programming.desc">Additional programming foundations for problem solving and systems.
+              </p>
               <div class="tech-list">
                 <span>Java</span><span>Python</span><span>C</span><span>C++</span>
               </div>
@@ -277,8 +286,8 @@
                 <span class="skill-index">06</span>
                 <span class="skill-icon">⌘</span>
               </div>
-              <h3>Tools</h3>
-              <p>Version control, collaboration, deployment, and ongoing delivery.</p>
+              <h3 data-i18n="skills.tools.title">Tools</h3>
+              <p data-i18n="skills.tools.desc">Version control, collaboration, deployment, and ongoing delivery.</p>
               <div class="tech-list">
                 <span>Git</span><span>GitHub</span><span>Deployment</span>
               </div>
@@ -287,16 +296,143 @@
         </div>
 
         <div class="logo-cloud glass-panel reveal">
-          <div class="logo-cloud-title">TECHNOLOGY STACK</div>
-          <div class="logo-row">
-            <span class="logo-chip"><b>HTML</b><small>markup</small></span>
-            <span class="logo-chip"><b>CSS</b><small>style</small></span>
-            <span class="logo-chip"><b>JS</b><small>language</small></span>
-            <span class="logo-chip"><b>REACT</b><small>frontend</small></span>
-            <span class="logo-chip"><b>NODE</b><small>runtime</small></span>
-            <span class="logo-chip"><b>EXPRESS</b><small>backend</small></span>
-            <span class="logo-chip"><b>POSTGRES</b><small>database</small></span>
-            <span class="logo-chip"><b>GIT</b><small>versioning</small></span>
+          <div class="logo-cloud-title" data-i18n="skills.stack">TECHNOLOGY STACK</div>
+
+          <div class="logo-marquee">
+            <div class="logo-track">
+
+              <!-- SET 1 -->
+              <div class="tech-logo">
+                <i class="devicon-html5-plain tech-html"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-css3-plain tech-css"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-javascript-plain tech-js"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-react-original tech-react"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-vitejs-plain tech-vite"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-nodejs-plain tech-node"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-express-original tech-express"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-postgresql-plain tech-postgres"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-mysql-plain tech-mysql"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-wordpress-plain tech-wordpress"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-java-plain tech-java"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-python-plain tech-python"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-c-plain tech-c"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-cplusplus-plain tech-cpp"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-git-plain tech-git"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-github-original tech-github"></i>
+              </div>
+
+
+              <!-- SET 2 — DUPLICATE -->
+              <div class="tech-logo">
+                <i class="devicon-html5-plain tech-html"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-css3-plain tech-css"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-javascript-plain tech-js"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-react-original tech-react"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-vitejs-plain tech-vite"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-nodejs-plain tech-node"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-express-original tech-express"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-postgresql-plain tech-postgres"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-mysql-plain tech-mysql"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-wordpress-plain tech-wordpress"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-java-plain tech-java"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-python-plain tech-python"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-c-plain tech-c"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-cplusplus-plain tech-cpp"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-git-plain tech-git"></i>
+              </div>
+
+              <div class="tech-logo">
+                <i class="devicon-github-original tech-github"></i>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -308,14 +444,15 @@
         <div class="section-heading section-heading-projects reveal">
           <span class="section-number">03</span>
           <div>
-            <p class="section-label">SELECTED WORK</p>
-            <h2>Projects that show<br /><span class="muted">what I can build.</span></h2>
+            <p class="section-label" data-i18n="projects.label">SELECTED WORK</p>
+            <h2><span data-i18n="projects.title1">Projects that show</span><br /><span class="muted"
+                data-i18n="projects.title2">what I can build.</span></h2>
           </div>
           <div class="project-filter glass-panel">
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter="full-stack">Full-Stack</button>
-            <button class="filter" data-filter="frontend">Frontend</button>
-            <button class="filter" data-filter="wordpress">WordPress</button>
+            <button class="filter active" data-filter="all" data-i18n="projects.all">All</button>
+            <button class="filter" data-filter="full-stack" data-i18n="projects.fullstack">Full-Stack</button>
+            <button class="filter" data-filter="frontend" data-i18n="projects.frontend">Frontend</button>
+            <button class="filter" data-filter="wordpress" data-i18n="projects.wordpress">WordPress</button>
           </div>
         </div>
 
@@ -331,8 +468,9 @@
         <div class="section-heading reveal">
           <span class="section-number">04</span>
           <div>
-            <p class="section-label">EXPERIENCE</p>
-            <h2>Where I've been<br /><span class="muted">building.</span></h2>
+            <p class="section-label" data-i18n="experience.label">EXPERIENCE</p>
+            <h2><span data-i18n="experience.title1">Where I've been</span><br /><span class="muted"
+                data-i18n="experience.title2">building.</span></h2>
           </div>
         </div>
 
@@ -341,16 +479,17 @@
             <div class="experience-marker">
               <span></span>
             </div>
-            <div class="experience-date">2026 — PRESENT</div>
+            <div class="experience-date" data-i18n="experience.date1">2025 — PRESENT</div>
             <div class="glass-panel experience-card">
               <div class="experience-top">
                 <div>
-                  <span class="experience-type">WEB DEVELOPMENT LEAD & FULL-STACK DEVELOPER</span>
-                  <h3>Ebdaa Media</h3>
+                  <span class="experience-type" data-i18n="experience.ebdaa.type">WEB DEVELOPMENT LEAD & FULL-STACK
+                    DEVELOPER</span>
+                  <h3 data-i18n="experience.ebdaa.company">Ebdaa Media</h3>
                 </div>
                 <span class="experience-count">01</span>
               </div>
-              <p>
+              <p data-i18n="experience.ebdaa.desc">
                 Lead the company's web development activities and oversee websites
                 and web applications for clients.
               </p>
@@ -372,16 +511,18 @@
             <div class="experience-marker">
               <span></span>
             </div>
-            <div class="experience-date">2026 — PRESENT</div>
+            <div class="experience-date" data-i18n="experience.date2">2025 — 2026</div>
             <div class="glass-panel experience-card">
               <div class="experience-top">
                 <div>
-                  <span class="experience-type">WEB DEVELOPER</span>
-                  <h3>Erasmus Department — Istanbul Aydın University</h3>
+                  <span class="experience-type" data-i18n="experience.erasmus.type">WEB DEVELOPER</span>
+                  <h3 data-i18n="experience.erasmus.company">
+                    Erasmus Department — Istanbul Aydın University
+                  </h3>
                 </div>
                 <span class="experience-count">02</span>
               </div>
-              <p>
+              <p data-i18n="experience.erasmus.desc">
                 Develop and maintain websites for the Erasmus Department while
                 implementing new requirements and improving existing experiences.
               </p>
@@ -401,24 +542,24 @@
 
         <div class="education-strip glass-panel reveal">
           <div>
-            <span class="section-label">EDUCATION</span>
-            <h3>Istanbul Aydın University</h3>
+            <span class="section-label" data-i18n="education.label">EDUCATION</span>
+            <h3 data-i18n="education.university">Istanbul Aydın University</h3>
           </div>
           <div>
-            <span>Bachelor's Degree in Computer Engineering</span>
+            <span data-i18n="education.degree">Bachelor's Degree in Computer Engineering</span>
             <strong>2023 — 2027</strong>
           </div>
         </div>
 
         <div class="training-row reveal">
           <div>
-            <span class="section-label">ADDITIONAL TRAINING</span>
+            <span class="section-label" data-i18n="training.label">ADDITIONAL TRAINING</span>
           </div>
           <div class="training-pills">
-            <span class="glass-tag">Full-Stack Web Development — Udemy</span>
-            <span class="glass-tag">Data Structures & Algorithms — Udemy</span>
-            <span class="glass-tag">Java Programming — Udemy</span>
-            <span class="glass-tag">Python Programming — Udemy</span>
+            <span class="glass-tag" data-i18n="training.1">Full-Stack Web Development — Udemy</span>
+            <span class="glass-tag" data-i18n="training.2">Data Structures & Algorithms — Udemy</span>
+            <span class="glass-tag" data-i18n="training.3">Java Programming — Udemy</span>
+            <span class="glass-tag" data-i18n="training.4">Python Programming — Udemy</span>
           </div>
         </div>
       </div>
@@ -430,9 +571,10 @@
         <div class="cta-shell glass-panel reveal">
           <div class="cta-orb" aria-hidden="true"></div>
           <span class="section-number">05</span>
-          <p class="section-label">LET'S WORK TOGETHER</p>
-          <h2>Have an idea?<br /><span class="text-gradient">Let's build it.</span></h2>
-          <p class="cta-copy">
+          <p class="section-label" data-i18n="cta.label">LET'S WORK TOGETHER</p>
+          <h2><span data-i18n="cta.title1">Have an idea?</span><br /><span class="text-gradient"
+              data-i18n="cta.title2">Let's build it.</span></h2>
+          <p class="cta-copy" data-i18n="cta.copy">
             Whether you're looking for a full web application, a client website,
             or help turning a concept into a working product, let's talk.
           </p>
@@ -440,27 +582,28 @@
           <div class="cta-actions">
             <a class="button button-primary" href="mailto:ebra h i m a l s h a b e b i @gmail.com"
               onclick="this.href='mailto:ebrahimalshabebi@gmail.com'">
-              Get in touch <span>↗</span>
+              <span data-i18n="cta.getInTouch">Get in touch</span> <span>↗</span>
             </a>
-            <a class="button button-glass" href="tel:+905068518358">Call me</a>
+            <a class="button button-glass" href="tel:+905068518358"><span data-i18n="cta.call">Call me</span></a>
           </div>
 
           <div class="contact-grid">
             <a class="contact-item" href="mailto:ebrahimalshabebi@gmail.com">
               <span class="contact-icon">✉</span>
-              <span><small>EMAIL</small>ebrahimalshabebi@gmail.com</span>
+              <span><small data-i18n="contact.email">EMAIL</small>ebrahimalshabebi@gmail.com</span>
             </a>
             <a class="contact-item" href="tel:+905068518358">
               <span class="contact-icon">↗</span>
-              <span><small>PHONE</small>+90 506 851 8358</span>
+              <span><small data-i18n="contact.phone">PHONE</small>+90 506 851 8358</span>
             </a>
             <a class="contact-item" href="https://github.com/shabebi" target="_blank" rel="noreferrer">
               <span class="contact-icon">GH</span>
-              <span><small>GITHUB</small>github.com/shabebi</span>
+              <span><small data-i18n="contact.github">GITHUB</small>github.com/shabebi</span>
             </a>
             <a class="contact-item" href="#" data-placeholder-link>
               <span class="contact-icon">in</span>
-              <span><small>LINKEDIN</small>Add your profile link</span>
+              <span><small data-i18n="contact.linkedin">LINKEDIN</small><span data-i18n="contact.linkedinAdd">Add your
+                  profile link</span></span>
             </a>
           </div>
         </div>
@@ -475,10 +618,10 @@
           <img src="assets/logo.png" alt="EA" class="brand-mark" />
           <span class="brand-name">EBRAHIM <b>AL-SHABEBI</b></span>
         </a>
-        <p>Full-Stack Web Developer · Web Development Lead</p>
+        <p data-i18n="footer.role">Full-Stack Web Developer · Web Development Lead</p>
       </div>
       <div class="footer-right">
-        <span>Yemen · Türkiye</span>
+        <span data-i18n="footer.location">Yemen · Türkiye</span>
         <span>© <span id="year"></span> Ebrahim Al-Shabebi</span>
       </div>
     </div>
