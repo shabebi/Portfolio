@@ -1,46 +1,31 @@
 # Ebrahim Al-Shabebi — Portfolio
 
-> Personal portfolio website showcasing my experience, projects, technical skills, education, and professional background as a Full-Stack Web Developer.
+Personal portfolio website showcasing my projects, experience, skills, education, and background as a Full-Stack Web Developer.
 
-## Overview
+### 🌐 Live Website
 
-This repository contains my personal portfolio website, designed to present my development experience and selected work through a modern, responsive interface.
+[**View My Portfolio →**](https://shabebi.github.io/Portfolio/)
 
-The website combines a minimal dark visual system with glassmorphism, subtle motion, responsive layouts, and bilingual English/Arabic support.
+## Built With
 
-## Highlights
+- HTML5
+- CSS3
+- JavaScript
 
-- Responsive design for desktop, tablet, and mobile
-- English and Arabic language support
-- RTL layout support for Arabic
-- Modern liquid-glass / glassmorphism UI
-- Interactive project filtering
-- Animated section reveals and scroll progress
-- Responsive mobile navigation
-- Project showcase with technology tags
-- Experience and education sections
+## Features
+
+- Responsive design
+- English & Arabic support
+- RTL support
+- Project showcase
+- Experience & education sections
+- Interactive animations
+- Mobile navigation
 - Downloadable CV
-- Contact section with email, GitHub, phone, and Instagram
-- Lightweight static architecture with no build step required
 
-## Tech Stack
+## Contact
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Website structure and semantic content |
-| CSS3 | Responsive layout, animations, glassmorphism, and visual design |
-| JavaScript | Interactions, language switching, project filtering, navigation, and animations |
-| Google Fonts | Typography |
-| Git / GitHub | Version control and project management |
+**Ebrahim Al-Shabebi**  
+Full-Stack Web Developer
 
-## Project Structure
-
-```text
-portfolio/
-│
-├── index.html
-├── styles.css
-├── script.js
-│
-└── assets/
-    └── Ebrahim_Al-Shabebi_CV.pdf
+[GitHub](https://github.com/shabebi) · [Instagram](https://www.instagram.com/shabebi_/) · [Email](mailto:ebrahimalshabebi@gmail.com)
