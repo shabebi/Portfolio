@@ -242,12 +242,10 @@ const translations = {
     "cta.copy":
       "Whether you're looking for a full web application, a client website, or help turning a concept into a working product, let's talk.",
     "cta.getInTouch": "Get in touch",
-    "cta.call": "Call me",
     "contact.email": "EMAIL",
     "contact.phone": "PHONE",
     "contact.github": "GITHUB",
-    "contact.linkedin": "LINKEDIN",
-    "contact.linkedinAdd": "Add your profile link",
+    "contact.instagram": "INSTAGRAM",
     "footer.role": "Full-Stack Web Developer · Web Development Lead",
     "footer.location": "Yemen · Türkiye",
   },
@@ -353,12 +351,10 @@ const translations = {
     "cta.copy":
       "سواء كنت تبحث عن تطبيق ويب متكامل أو موقع لعميل أو تحتاج إلى تحويل فكرة إلى منتج يعمل، لنتحدث.",
     "cta.getInTouch": "تواصل معي",
-    "cta.call": "اتصل بي",
     "contact.email": "البريد الإلكتروني",
     "contact.phone": "الهاتف",
     "contact.github": "جيت هب",
-    "contact.linkedin": "لينكدإن",
-    "contact.linkedinAdd": "أضف رابط ملفك الشخصي",
+    "contact.instagram": "إنستغرام",
     "footer.role": "مطور ويب متكامل · قائد تطوير ويب",
     "footer.location": "اليمن · تركيا",
   },
@@ -939,18 +935,6 @@ if (canHover) {
     });
   });
 }
-
-/* =========================================================
-   PLACEHOLDER LINK PROTECTION
-   ========================================================= */
-
-document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    alert("Add your LinkedIn profile URL in index.html.");
-  });
-});
 
 /* =========================================================
    YEAR
