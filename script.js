@@ -41,6 +41,24 @@ const projects = [
   },
 
   {
+    name: "Anisphone",
+    category: "full-stack",
+    label: "Full-Stack",
+    description:
+      "A full-stack e-commerce website for a mobile phone shop in Aden, Yemen. Customers can browse products and place orders through WhatsApp, while a custom admin dashboard manages the catalog and inventory. Built with React, Node.js, Express.js, and PostgreSQL, with Arabic RTL support for administration.",
+    technologies: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+    ],
+    preview: "https://shabebi.github.io/anisphone/",
+    url: "https://shabebi.github.io/anisphone/",
+  },
+
+  {
     name: "Turbo Travel",
     category: "full-stack",
     label: "Full-Stack",
@@ -101,17 +119,6 @@ const projects = [
     technologies: ["React", "Node.js", "SQL"],
     preview: "https://mo-melhi.github.io/Annona/",
     url: "https://mo-melhi.github.io/Annona/",
-  },
-
-  {
-    name: "Anisphone Rate Us",
-    category: "frontend",
-    label: "Frontend",
-    description:
-      "A lightweight customer feedback and rating page developed for Anisphone and designed for quick access through QR codes. Customers can scan the QR code, open the rating page instantly, and submit their feedback through a simple, mobile-friendly interface.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    preview: "https://rateus.anisfon.com/",
-    url: "https://rateus.anisfon.com/",
   },
 
   {
@@ -410,13 +417,12 @@ const projectArabic = {
       "مشروع جامعي جماعي يهدف إلى جعل العمل ضمن الفرق أكثر وضوحًا وقابلية للقياس. تساعد Annona الفرق على تنظيم المهام من خلال لوحة Kanban وتتبع مساهمات الأعضاء وحساب درجات المشاركة بناءً على النشاط والعمل المنجز وعرض أداء الفريق من خلال التحليلات ولوحات المتصدرين وسجل النشاط.",
   },
 
-  "Anisphone Rate Us": {
-    name: " أنيس فون",
-    label: "Frontend",
+  Anisphone: {
+    name: "أنيس فون",
+    label: "Full-Stack",
     description:
-      "صفحة خفيفة لتقييم العملاء تم تطويرها لشركة Anisphone ومصممة للوصول السريع من خلال رموز QR. يمكن للعملاء مسح الرمز وفتح صفحة التقييم مباشرة وإرسال ملاحظاتهم من خلال واجهة بسيطة ومتوافقة مع الهواتف.",
+      "منصة تجارة إلكترونية لمتجر هواتف في عدن، تتيح للعملاء تصفح الهواتف والإكسسوارات وطلب المنتجات عبر واتساب. تتضمن لوحة إدارة للتحكم بالمنتجات والمخزون والفئات والعلامات التجارية، مع واجهة مبنية باستخدام React & Vite، وخلفية باستخدام Node.js & Express.js، وقاعدة بيانات PostgreSQL.",
   },
-
   Ghassan: {
     name: "غسان",
     label: "Frontend",
